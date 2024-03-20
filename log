@@ -232,3 +232,31 @@ Wed 20 Mar 2024 09:55:28 PM UTC:
  tests:  6|2
 total_score: 50/70
 eece4b3
+Wed 20 Mar 2024 10:04:51 PM UTC: 
+ exercises.c | 61 ++++++++++++++++++++++++++++++++++++++++++++++++-------------
+ 1 file changed, 48 insertions(+), 13 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:113:7: error: unused variable ‘balance’ [-Werror=unused-variable]
+  113 |   int balance = 1;
+      |       ^~~~~~~
+exercises.c: At top level:
+exercises.c:159:3: error: expected identifier or ‘(’ before ‘if’
+  159 |   if (contA == contC){
+      |   ^~
+exercises.c:162:3: error: expected identifier or ‘(’ before ‘else’
+  162 |   else{
+      |   ^~~~
+exercises.c:166:4: error: expected identifier or ‘(’ before ‘return’
+  166 |    return balance;
+      |    ^~~~~~
+exercises.c:167:1: error: expected identifier or ‘(’ before ‘}’ token
+  167 | }
+      | ^
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:156:3: error: control reaches end of non-void function [-Werror=return-type]
+  156 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+3405b66
