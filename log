@@ -24,3 +24,14 @@ exercises.c:47:11: error: unused variable ‘elemento’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 112282d
+Wed 20 Mar 2024 08:48:12 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:47:10: error: unused variable ‘elemento’ [-Werror=unused-variable]
+   47 |     int* elemento = malloc(1 * sizeof(int));
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d5fc8c6
