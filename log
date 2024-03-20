@@ -69,3 +69,9 @@ exercises.c:49:18: error: ‘*elemento’ is used uninitialized [-Werror=uniniti
 cc1: all warnings being treated as errors
 Compilation failed
 1294f6b
+Wed 20 Mar 2024 08:51:04 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  1|4
+total_score: 10/70
+e82a74f
