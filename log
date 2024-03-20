@@ -157,3 +157,14 @@ exercises.c:85:11: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 d363171
+Wed 20 Mar 2024 09:10:07 PM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:86:16: error: comparison between pointer and integer [-Werror]
+   86 |     if (actual == elem){
+      |                ^~
+cc1: all warnings being treated as errors
+Compilation failed
+a993189
