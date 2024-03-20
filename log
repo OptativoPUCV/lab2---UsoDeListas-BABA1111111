@@ -12,3 +12,15 @@ exercises.c:47:11: error: unused variable ‘elemento’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 27d2dbb
+Wed 20 Mar 2024 08:46:00 PM UTC: 
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:47:40: error: invalid application of ‘sizeof’ to incomplete type ‘List’
+   47 |     List* elemento = malloc(1 * sizeof(List));
+      |                                        ^~~~
+exercises.c:47:11: error: unused variable ‘elemento’ [-Werror=unused-variable]
+   47 |     List* elemento = malloc(1 * sizeof(List));
+      |           ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+112282d
