@@ -60,12 +60,12 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
   int suma = 0;
-  while (i != NULL){
-    int* elemento = malloc(1 * sizeof(int));
-    *elemento = i;
-    pushFront(L, elemento);
 
+  void* elemento = first(L);
+
+  while(elemento != NULL){
     suma += elemento;
+    elemento = next(L);
   }
    return suma;
 }
