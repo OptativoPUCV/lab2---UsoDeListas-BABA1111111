@@ -61,6 +61,9 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
   int suma = 0;
   while (i != NULL){
+    int* elemento = malloc(1 * sizeof(int));
+    *elemento = i;
+    
     suma += i;
     i++;
   }
