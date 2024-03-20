@@ -97,3 +97,18 @@ exercises.c:63:10: error: ‘i’ undeclared (first use in this function)
 exercises.c:63:10: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 f9fc05f
+Wed 20 Mar 2024 08:54:57 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:63:10: error: ‘i’ undeclared (first use in this function)
+   63 |   while (i != NULL){
+      |          ^
+exercises.c:63:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:68:10: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   68 |     suma += elemento;
+      |          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+402fba6

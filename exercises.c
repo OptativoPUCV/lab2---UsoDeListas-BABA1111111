@@ -63,9 +63,9 @@ int sumaLista(List *L) {
   while (i != NULL){
     int* elemento = malloc(1 * sizeof(int));
     *elemento = i;
-    
-    suma += i;
-    i++;
+    pushFront(L, elemento);
+
+    suma += elemento;
   }
    return suma;
 }
