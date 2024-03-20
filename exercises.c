@@ -111,23 +111,36 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 
 int parentesisBalanceados(char *cadena) {
   int balance = 1; 
+  int contA = 0, contC = 0;
   
   for (int i = 0; cadena[i] != '\0'; i++){
-    if (cadena[i] == '('){
-      if (cadena[i + 1] != ')'){
-        balance = 0;
-      }
+    if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{'){
+      contA++;
     }
-    if (cadena[i] == '['){
-      if (cadena[i + 1] != ']'){
-        balance = 0;
-      }
+    if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}'){
+      contC++;
     }
-    if (cadena[i] == '{'){
-      if (cadena [i + 1] != '}'){
-        balance = 0;
-      }
-    }
+    // if (cadena[i] == '('){
+    //   if (cadena[i + 1] != ')'){
+    //     balance = 0;
+    //   }
+    // }
+    // if (cadena[i] == '['){
+    //   if (cadena[i + 1] != ']'){
+    //     balance = 0;
+    //   }
+    // }
+    // if (cadena[i] == '{'){
+    //   if (cadena [i + 1] != '}'){
+    //     balance = 0;
+    //   }
+    // }
+  }
+  if (contA == contC){
+    balance = 1;
+  }
+  else{
+    balance = 0;
   }
   
    return balance;
