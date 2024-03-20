@@ -75,3 +75,14 @@ Wed 20 Mar 2024 08:51:04 PM UTC:
  tests:  1|4
 total_score: 10/70
 e82a74f
+Wed 20 Mar 2024 08:51:44 PM UTC: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:63:10: error: ‘i’ undeclared (first use in this function)
+   63 |   while (i != NULL){
+      |          ^
+exercises.c:63:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+ade2f52
