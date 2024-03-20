@@ -214,3 +214,9 @@ test.c:175:5: error: implicit declaration of function ‘copia_pila’; did you 
 cc1: all warnings being treated as errors
 Compilation failed
 e3f4f07
+Wed 20 Mar 2024 09:32:43 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+ tests:  3|2
+total_score: 40/70
+f1e874e
