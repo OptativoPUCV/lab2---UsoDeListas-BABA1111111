@@ -143,3 +143,17 @@ exercises.c:85:14: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 17723b4
+Wed 20 Mar 2024 09:07:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:84:8: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   84 |   elem = first(L);
+      |        ^
+exercises.c:85:11: error: comparison between pointer and integer [-Werror]
+   85 |   while(i != NULL){
+      |           ^~
+cc1: all warnings being treated as errors
+Compilation failed
+d363171
