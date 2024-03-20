@@ -113,56 +113,21 @@ int parentesisBalanceados(char *cadena) {
   int balance = 1; 
   int contA = 0, contC = 0;
   
-  // for (int i = 0; cadena[i] != '\0'; i++){
-    // if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{'){
-    //   contA++;
-    // }
-    // if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}'){
-    //   contC++;
-    // }
-    // if (cadena[i] == '('){
-    //   contA++;
-    //   if (cadena[i] == ')'){
-    //     contC++;
-    //   }
-    // }
-
-    int i = 0;
-    while(contA == contC){
-      if (cadena[i] == '('){
-        contA++;
-        if (cadena[i] == ')'){
-          contC++;
-        }
-      }
-      contA = 0;
-      contC = 0;
-      if (cadena[i] == '('){
-        contA++;
-        if (cadena[i] == ')'){
-          contC++;
-        }
-      }
-      contA = 0;
-      contC = 0;
-      if (cadena[i] == '('){
-        contA++;
-        if (cadena[i] == ')'){
-          contC++;
-        }
-      }
-  
+  for (int i = 0; cadena[i] != '\0'; i++){
+    if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{'){
+      contA++;
     }
-  }
+    if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}'){
+      contC++;
+    }
 
-  
+  }
   if (contA == contC){
     balance = 1;
   }
   else{
     balance = 0;
   }
-  
    return balance;
 }
 // if (cadena[i] == '('){
