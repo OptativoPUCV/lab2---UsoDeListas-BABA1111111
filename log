@@ -203,3 +203,14 @@ exercises.c:105:18: error: invalid use of incomplete typedef ‘Stack’ {aka �
       |                ~~^~~
 Compilation failed
 92fd88a
+Wed 20 Mar 2024 09:32:27 PM UTC: 
+ exercises.c | 11 -----------
+ 1 file changed, 11 deletions(-)
+test.c: In function ‘test_copia_pila’:
+test.c:175:5: error: implicit declaration of function ‘copia_pila’; did you mean ‘test_copia_pila’? [-Werror=implicit-function-declaration]
+  175 |     copia_pila(P1, P2);
+      |     ^~~~~~~~~~
+      |     test_copia_pila
+cc1: all warnings being treated as errors
+Compilation failed
+e3f4f07
